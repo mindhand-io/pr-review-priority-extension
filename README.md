@@ -2,7 +2,7 @@
 <img src="https://user-images.githubusercontent.com/5107241/83484900-8507e600-a4d8-11ea-936f-a9f969f88006.png" style="width: 80px;">
 </p>
 
-<h1 style="text-align: center;">PR Review Priority Extension for Chrome</h1>
+<h1 align="center">PR Review Priority Extension for Chrome</h1>
 
 Give your GitHub PR review comment a priority level to make your colleagues happier!
 
