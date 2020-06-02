@@ -27,7 +27,7 @@
     "@types/chrome": "^0.0.114",
     "@types/jest": "^25.2.3",
     "@types/jquery": "^3.3.38",
-    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/eslint-plugin": "^3.0.0",
     "copy-webpack-plugin": "^6.0.1",
     "eslint": "^6.8.0",
     "eslint-plugin-import": "^2.20.2",
