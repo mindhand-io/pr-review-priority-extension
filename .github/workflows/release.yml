@@ -27,7 +27,7 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: npm run lint
       - run: npm run build
-      - run: zip -r pr-review-priority-extension.zip ./dist
+      - run: zip -r pr-review-priority-extension-${{ github.ref }}.zip ./dist/*
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
