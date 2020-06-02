@@ -46,6 +46,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./pr-review-priority-extension-${{ steps.tag_name.outputs.tag }}.zip
+          asset_path: ./dist/pr-review-priority-extension-${{ steps.tag_name.outputs.tag }}.zip
           asset_name: pr-review-priority-extension-${{ steps.tag_name.outputs.tag }}.zip
           asset_content_type: application/zip
