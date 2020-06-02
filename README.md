@@ -8,7 +8,7 @@
 
 Give your GitHub PR review comment a priority level to make your colleagues happier!
 
-[Install on the Chrome Web Store](https://chrome.google.com/webstore/detail/mcngolehbdnjjdgbcafgkgigjmplbmhb)
+[Install on the Chrome Web Store](https://chrome.google.com/webstore/detail/pr-review-priority/mcngolehbdnjjdgbcafgkgigjmplbmhb)
 
 ![Frame 1](https://user-images.githubusercontent.com/5107241/83484882-7c171480-a4d8-11ea-84ff-2b3d6e3858b3.png)
 
