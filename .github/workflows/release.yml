@@ -24,7 +24,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm install
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: npm run lint
       - run: npm run build
       - run: zip -r pr-review-priority-extension-${{ github.ref }}.zip ./dist/*
@@ -45,6 +45,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./pr-review-priority-extension.zip
-          asset_name: pr-review-priority-extension.zip
+          asset_path: ./pr-review-priority-extension-${{ github.ref }}.zip
+          asset_name: pr-review-priority-extension-${{ github.ref }}.zip
           asset_content_type: application/zip
