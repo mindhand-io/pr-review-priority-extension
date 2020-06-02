@@ -1,71 +1,13 @@
-# Chrome Extension TypeScript Starter
+<p align="center"> 
+<img src="https://user-images.githubusercontent.com/5107241/83484900-8507e600-a4d8-11ea-936f-a9f969f88006.png" style="width: 80px">
+</p>
 
-[![Build Status](https://travis-ci.org/chibat/chrome-extension-typescript-starter.svg?branch=master)](https://travis-ci.org/chibat/chrome-extension-typescript-starter)
+# PR Review Priority Extension for Chrome
 
-Chrome Extension, TypeScript and Visual Studio Code
+Give your GitHub PR review comment a priority level to make your colleagues happier!
 
-## Prerequisites
+[Install on the Chrome Web Store](https://chrome.google.com/webstore/detail/mcngolehbdnjjdgbcafgkgigjmplbmhb)
 
-* [node + npm](https://nodejs.org/) (Current Version)
+![Frame 1](https://user-images.githubusercontent.com/5107241/83484882-7c171480-a4d8-11ea-84ff-2b3d6e3858b3.png)
 
-## Option
-
-* [Visual Studio Code](https://code.visualstudio.com/)
-
-## Includes the following
-
-* TypeScript
-* Webpack
-* Moment.js
-* jQuery
-* Jest
-* Example Code
-    * Chrome Storage
-    * Options Version 2
-    * content script
-    * count up badge number
-    * background
-
-## Project Structure
-
-* src/typescript: TypeScript source files
-* src/assets: static files
-* dist: Chrome Extension directory
-* dist/js: Generated JavaScript files
-
-## Setup
-
-```
-npm install
-```
-
-## Import as Visual Studio Code project
-
-...
-
-## Build
-
-```
-npm run build
-```
-
-## Build in watch mode
-
-### terminal
-
-```
-npm run watch
-```
-
-### Visual Studio Code
-
-Run watch mode.
-
-type `Ctrl + Shift + B`
-
-## Load extension to chrome
-
-Load `dist` directory
-
-## Test
-`npx jest` or `npm run test`
+![Frame 2](https://user-images.githubusercontent.com/5107241/83484887-7e796e80-a4d8-11ea-9008-3839960cab5a.png)
