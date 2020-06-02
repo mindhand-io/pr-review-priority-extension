@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "PR Review Priority",
+  "description": "Set priorities for your GitHub PR review comments",
+  "version": "1.0",
+  "icons": {
+    "128": "logo-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js/vendor.js", "js/content-script.js"]
+    }
+  ],
+  "permissions": ["storage", "<all_urls>"]
+}

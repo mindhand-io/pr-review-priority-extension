@@ -1,0 +1,62 @@
+{
+  "name": "pr-review-priority-extension",
+  "version": "1.0.0",
+  "description": "Set priorities for your GitHub PR review comments",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --config webpack/webpack.dev.js --watch",
+    "build": "webpack --config webpack/webpack.prod.js",
+    "clean": "rimraf dist",
+    "test": "npx jest",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "format": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
+  },
+  "author": "Stackie Jia <stackie@mindhand.io>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mindhand-io/pr-review-priority-extension.git"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@mindhand-io/eslint-config": "^1.0.4",
+    "@types/chrome": "^0.0.114",
+    "@types/jest": "^25.2.3",
+    "@types/jquery": "^3.3.38",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "copy-webpack-plugin": "^6.0.1",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^2.5.1",
+    "husky": "^4.2.5",
+    "jest": "^26.0.1",
+    "lint-staged": "^10.2.7",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2 ",
+    "ts-jest": "^26.1.0",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^4.2.2"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,tsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
