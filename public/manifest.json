@@ -11,6 +11,5 @@
       "matches": ["https://github.com/*"],
       "js": ["js/vendor.js", "js/content-script.js"]
     }
-  ],
-  "permissions": ["activeTab"]
+  ]
 }
