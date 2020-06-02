@@ -29,7 +29,7 @@ jobs:
       - run: npm run build
       - uses: olegtarasov/get-tag@v2
         id: tag_name
-      - run: zip -r pr-review-priority-extension-${{ steps.tag_name.outputs.tag }}.zip ./dist/*
+      - run: cd dist && zip -r pr-review-priority-extension-${{ steps.tag_name.outputs.tag }}.zip .
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
