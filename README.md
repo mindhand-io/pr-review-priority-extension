@@ -4,7 +4,7 @@
 
 <h1 align="center">PR Review Priority Extension for Chrome</h1>
 
-![build](https://github.com/mindhand-io/pr-review-priority-extension/workflows/lint%20&%20build/badge.svg?branch=master)
+![ci](https://github.com/mindhand-io/pr-review-priority-extension/workflows/ci/badge.svg)
 
 Give your GitHub PR review comment a priority level to make your colleagues happier!
 
