@@ -23,7 +23,7 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
-    "@mindhand-io/eslint-config": "^1.0.4",
+    "@mindhand-io/eslint-config": "^2.0.0",
     "@types/chrome": "^0.0.114",
     "@types/jest": "^25.2.3",
     "@types/jquery": "^3.3.38",
