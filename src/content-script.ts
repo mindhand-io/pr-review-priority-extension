@@ -34,10 +34,12 @@ const observer = new MutationObserver((mutations) => {
         const selectId = `priority-${insertionId}`;
         $(".form-actions", node)
           .before(`<select id="${selectId}" style="float: left; height: 34px; margin-left: 8px;">
-    ${priorityOptions.map(
-      (priority) =>
-        `<option value="${priority.textInsertion}">${priority.displayName}</option>`
-    )}
+    ${priorityOptions
+      .map(
+        (priority) =>
+          `<option value="${priority.textInsertion}">${priority.displayName}</option>`
+      )
+      .join("\n")}
   </select>
 </div>`);
         $(
@@ -46,9 +48,9 @@ const observer = new MutationObserver((mutations) => {
         ).click((e) => {
           const $textarea = $(".comment-form-textarea", node);
           $textarea.val(
-            `|Feedback Priority|\n|---|\n|${$(
-              `#${selectId}`
-            ).val()}|\n\n${$textarea.val()}`
+            `|Feedback Priority|\n|---|\n|${
+              $(`#${selectId}`).val() as string
+            }|\n\n${$textarea.val() as string}`
           );
           e.stopPropagation();
         });
