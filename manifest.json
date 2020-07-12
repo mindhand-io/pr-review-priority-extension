@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "PR Review Priority",
   "description": "Set priorities for your GitHub PR review comments",
-  "version": "1.0",
+  "version": "<Copied from package.json when build>",
   "icons": {
     "128": "logo-128.png"
   },

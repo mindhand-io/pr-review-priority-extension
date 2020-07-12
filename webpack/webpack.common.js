@@ -1,9 +1,15 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable */
 const path = require("path");
-// eslint-disable-next-line import/no-extraneous-dependencies
 const CopyPlugin = require("copy-webpack-plugin");
+let packageJson = require("../package.json");
 
 const srcDir = "../src/";
+
+function modifyManifestVersion(buffer) {
+  var manifest = JSON.parse(buffer.toString());
+  manifest.version = packageJson.version;
+  return JSON.stringify(manifest, null, 2);
+}
 
 module.exports = {
   entry: {
@@ -33,7 +39,16 @@ module.exports = {
   },
   plugins: [
     new CopyPlugin({
-      patterns: [{ from: ".", to: "../", context: "public" }],
+      patterns: [
+        {
+          from: path.join(__dirname, "../manifest.json"),
+          to: path.join(__dirname, "../dist/manifest.json"),
+          transform(content, path) {
+            return modifyManifestVersion(content);
+          },
+        },
+        { from: ".", to: "../", context: "public" },
+      ],
     }),
   ],
 };
