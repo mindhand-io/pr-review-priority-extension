@@ -2,7 +2,7 @@
 <img src="https://user-images.githubusercontent.com/5107241/83484900-8507e600-a4d8-11ea-936f-a9f969f88006.png" style="width: 80px;">
 </p>
 
-<h1 align="center">PR Review Priority Extension for Chrome</h1>
+<h1 align="center">PR Review Priority Extension for Chrome / Firefox</h1>
 
 ![ci](https://github.com/mindhand-io/pr-review-priority-extension/workflows/ci/badge.svg)
 
