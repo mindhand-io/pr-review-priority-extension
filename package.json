@@ -24,7 +24,7 @@
     "@commitlint/cli": "^9.0.0",
     "@commitlint/config-conventional": "^9.0.0",
     "@mindhand-io/eslint-config": "^3.1.0",
-    "@types/chrome": "^0.0.121",
+    "@types/chrome": "^0.0.148",
     "@types/copy-webpack-plugin": "^6.0.0",
     "@types/jest": "^26.0.4",
     "@types/jquery": "^3.5.0",
