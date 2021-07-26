@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^9.0.0",
-    "@commitlint/config-conventional": "^9.0.0",
+    "@commitlint/config-conventional": "^13.1.0",
     "@mindhand-io/eslint-config": "^3.1.0",
     "@types/chrome": "^0.0.121",
     "@types/copy-webpack-plugin": "^6.0.0",
